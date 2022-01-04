@@ -719,7 +719,7 @@ class do_stuff():
 	#def mutate(self,child):
 
 	def mutation(self,pop):
-		mut_rate = 0.03
+		mut_rate = 0.95
 		for m_b in range(len(pop)):
 			flag = random.random()
 			if flag > mut_rate:
@@ -761,7 +761,7 @@ class do_stuff():
 		# 突然変異_3:ランダム
 		new_pop=pop
 		for j in range(setting.LEN_GENOME * self.population_size):
-			if random.random()>0.97:
+			if random.random()>0.95:
 				r1, r2 = divmod(j, 20)
 				new_pop[r1][r2]=random.random()
 		return new_pop
@@ -883,9 +883,13 @@ class do_stuff():
 		# 子個体の作成
 		#UNDX呼び出す
 		for j in range(int((num_pop - num_elite)/2)):
+			r=random.sample(range(setting.LEN_GENOME), k=3)
+			r1=r[0]
+			r2=r[1]
+			r3=r[2]
 			#child = self.Random_search(num_chrom)
 			#child1,child2 = self.undx(parent1,parent2,parent3)
-			child1, child2 = self.undx(self.population_data[j].car_def.car_genome, self.population_data[j+1].car_def.car_genome, self.population_data[j+2].car_def.car_genome)
+			child1, child2 = self.undx(self.population_data[r1].car_def.car_genome, self.population_data[r2].car_def.car_genome, self.population_data[r3].car_def.car_genome)
 			#child1,child2 =self.mask(self.population_data[j].car_def.car_genome,self.population_data[j+1].car_def.car_genome)
 			new_pop.append(child1)
 			new_pop.append(child2)
