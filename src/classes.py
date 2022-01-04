@@ -883,7 +883,7 @@ class do_stuff():
 		# 子個体の作成
 		#UNDX呼び出す
 		for j in range(int((num_pop - num_elite)/2)):
-			r=random.sample(range(setting.LEN_GENOME), k=3)
+			r=random.sample(range(num_pop), k=3)
 			r1=r[0]
 			r2=r[1]
 			r3=r[2]
