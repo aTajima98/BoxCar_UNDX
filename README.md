@@ -43,7 +43,8 @@ Unimodal Normal Distribution Crossover (UNDX)は，交叉を主探索オペレ�
 
 ![undx_shiki](img/undx_offspring.jpg)
 
-
+ [Ono 2003]Ono, Isao, Hajime Kita, and Shigenobu Kobayashi. "A real-coded genetic algorithm using the unimodal normal distribution crossover." Advances in evolutionary computing. Springer, Berlin, Heidelberg, 2003. 213-237.
+                                                                                               
 ## プログラムの構成  
 基本的には遺伝的アルゴリズムの流れになっている．
 
