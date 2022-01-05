@@ -39,7 +39,7 @@ http://boxcar2d.com/
 Unimodal Normal Distribution Crossover (UNDX)は，交叉を主探索オペレータとして考える．
 方法として，3つの親から正規乱数を使用して2つの子個体を生成する．
 3つの親のうち，2つの親を結ぶ直線を主探索軸とし，その周辺に子個体が生成される．
-詳しいUNDXでの子個体生成式を以下に示す．
+詳しいUNDXでの子個体生成式を以下に示す．UNDXの実装は[Ono 2003]を参考にした．
 
 ![undx_shiki](img/undx_offspring.jpg)
 
