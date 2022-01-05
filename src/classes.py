@@ -898,7 +898,7 @@ class do_stuff():
 		new_population_data = []
 
 		#突然変異
-		new_pop=self.mutation_2(new_pop)
+		new_pop=self.mutation_(new_pop)
 
 		# GAの一般系からboxcar2D形式のデータへ変換
 		for indi in range(num_pop):
