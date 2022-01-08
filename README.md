@@ -77,5 +77,5 @@ Unimodal Normal Distribution Crossover (UNDX)は，交叉を主探索オペレ�
   
 ## 補足
 - 交叉や突然変異は，classes.pyのundx()関数やmutation()関数に記述している．
-- 遺伝的アルゴリズムの部分は，主にnext_generation関数に記述している．
-- 
+- 遺伝的アルゴリズムの部分は，主にnext_generation()関数に記述している．
+- 設計変数の正規化(0~1)を行わないと，おかしな形状の車が作成されるため，チェックが必要．
