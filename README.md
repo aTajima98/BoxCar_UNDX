@@ -1,6 +1,6 @@
 # BoxCar_UNDX
 
-## 作品名
+## 作品
 UNDXを用いた車の設計
 
 ![car](img/box_car.jpg)
